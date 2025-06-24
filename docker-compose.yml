@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  gen-rickroll:
+    build: .
+    volumes:
+      - ./output:/app/output
+    container_name: gen-rickroll
