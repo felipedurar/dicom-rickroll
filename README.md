@@ -2,7 +2,8 @@
 A Rickroll DICOM File Generator
 
 ## What is it?
-This project generates a Rickroll DICOM File!
+![alt text](screenshots/screenshot1.png)
+This project generates a Rickroll Meme DICOM File!
 Unfortunatelly i cannot provide the Rickroll DICOM file here due to copyright, that's why i created this script, it basically downloads the Youtube video, 
 encodes it to the H.264 format and them convert it to DICOM format.
 

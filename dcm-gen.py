@@ -12,8 +12,13 @@ fps_target = 10
 max_seconds = 20
 target_size = (640, 480)  # (width, height)
 
+# Check output path
+output_path = './output'
+if not os.path.exists(output_path):
+    os.mkdir(output_path)
+
 # Download the Video
-mp4_input_file = 'input.mp4'
+mp4_input_file = './output/input.mp4'
 if os.path.exists(mp4_input_file):
     print('Video File already downloaded!')
 else:
@@ -30,7 +35,7 @@ else:
 
 # Convert using ffmpeg
 # ffmpeg -i input.mp4 -c:v libx264 -crf 23 -preset fast converted.mp4
-mpeg_output_file = 'output.mp4'
+mpeg_output_file = './output/output.mp4'
 if not os.path.exists(mpeg_output_file):
     print('Converting Video Format to H.264...')
     command = [
@@ -45,7 +50,7 @@ if not os.path.exists(mpeg_output_file):
     print('Video Format Converted!')
 
 # Generate the Dicom File
-output_path = "rickroll.dcm"
+output_path = "./output/rickroll.dcm"
 if not os.path.exists(output_path):
     print('Writing DICOM File...')
     cap = cv2.VideoCapture(mpeg_output_file)

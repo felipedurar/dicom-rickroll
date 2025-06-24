@@ -207,6 +207,4 @@ marimo/_lsp/
 __marimo__/
 
 # Custom
-input.mp4
-output.mp4
-rickroll.dcm
+output/
