@@ -5,10 +5,12 @@ A Rickroll DICOM File Generator
 
 ## What is it?
 This project generates a Rickroll Meme DICOM File!
+
 Unfortunatelly i cannot provide the Rickroll DICOM file here due to copyright, that's why i created this script, it basically downloads the Youtube video, 
 encodes it to the H.264 format and them convert it to DICOM format.
 
 My objective here is not to just add the MPEG content into the DICOM dataset, actually i wanted to make everyframe as an instance, just like an MR/CT image.
+
 This also garantees that almost any DICOM viewer can visualize this Rickroll.
 
 ## How to generate the Rickroll DICOM File?
